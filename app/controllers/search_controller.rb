@@ -5,5 +5,5 @@ class SearchController < ApplicationController
       facade: SearchResultsFacade.new(params[:q])
     }
   end
-
+  
 end

@@ -12,7 +12,7 @@ describe "As a user" do
     # expect(current_path).to eq('/search')
 
     # Then I should see the total results of the stations that match my query, 90.
-    expect(page).to have_css('.total-results', count: 90) #93
+    expect(page).to have_css('.total-results', count: 93) #old story says 90
     # Then I should see a list of the 15 closest stations within 5 miles sorted by distance
     expect(page).to have_css('.closest-results', count: 15)
     # And for each of the stations I should see Name, Address, Fuel Types, Distance, and Access Times
