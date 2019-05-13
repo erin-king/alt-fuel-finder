@@ -1,0 +1,14 @@
+<h1>Search Results</h1>
+
+<section class='total-results'>
+  <h3>Total Results:</h3>
+  <% facade.total_results.each do |result| %>
+  <ul>
+    <li>Name: <%= result.name %></li>
+    <li>Address: <%= result.address %></li>
+    <li>Fuel Types: <%= result.fuel_types %></li>
+    <li>Distance: <%= result.distance %></li>
+    <li>Access Times: <%= result.access_times %></li>
+  </ul>
+  <% end %>
+</section>
