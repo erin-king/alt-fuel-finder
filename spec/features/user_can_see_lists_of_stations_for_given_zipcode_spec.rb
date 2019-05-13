@@ -4,7 +4,7 @@ describe "As a user" do
   it "can fill in search form with 80206, click and see total results" do
     visit '/'
     # And I fill in the search form with 80206 (Note: Use the existing search form)
-    fill_in "Search by zip...", with: '80206'
+    fill_in :q, with: '80206'
     # And I click "Locate"
     click_button "Locate"
     # Then I should be on page "/search"
